@@ -1,6 +1,6 @@
 """Base Transform for doing basic calls for dwt & idwt based on the dimensions called"""
 
-from wavelet.extension.wavelet_transform import dwt, idwt
+from wavelet.extension.wavelet_transform import WaveletTransform
 from wavelet.util import getExponent
 
 cimport numpy as np
@@ -9,7 +9,7 @@ import numpy as np
 
 cdef class BaseTransform:
     def __init__(self, waveletName):
-        print("Using coif1")
+        self.wavelet = WaveletTransform(waveletName)
 
     cpdef waveDec1(self, np.ndarray arrTime, int level):
         cdef int length = 0
@@ -19,7 +19,7 @@ cdef class BaseTransform:
         cdef np.ndarray arrTemp
 
         while dataLength >= transformWaveletLength and length < level:
-            arrTemp = dwt(arrHilbert, dataLength)
+            arrTemp = self.wavelet.dwt(arrHilbert, dataLength)
             arrHilbert[: len(arrTemp)] = arrTemp
 
             dataLength >>= 1
@@ -39,7 +39,7 @@ cdef class BaseTransform:
             h <<= 1
 
         while len(arrTime) >= h >= transformWaveletLength:
-            arrTemp = idwt(arrTime, h)
+            arrTemp = self.wavelet.idwt(arrTime, h)
             arrTime[: len(arrTemp)] = arrTemp
 
             h <<= 1
