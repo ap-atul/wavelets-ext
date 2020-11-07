@@ -15,7 +15,7 @@ class WaveletTransform:
 
     @cython.boundscheck(False)
     @cython.wraparound(False)
-    cdef dwt(self, double[:] arrTime, int level):
+    def dwt(self, double[:] arrTime, int level):
 
         cdef double[:] decompHF = self.w.decompositionHighFilter
         cdef double[:] decompLF = self.w.decompositionLowFilter
