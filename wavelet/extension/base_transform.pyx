@@ -1,5 +1,3 @@
-"""Base Transform for doing basic calls for dwt & idwt based on the dimensions called"""
-
 from wavelet.extension.wavelet_transform import WaveletTransform
 from wavelet.util import getExponent
 

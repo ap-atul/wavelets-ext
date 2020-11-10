@@ -1,6 +1,3 @@
-"""Discrete Wavelet and Inverse Transform implementation"""
-
-
 cimport numpy as np
 import numpy as np
 cimport cython
@@ -17,8 +14,8 @@ class WaveletTransform:
     @cython.wraparound(False)
     def dwt(self, double[:] arrTime, int level):
 
-        cdef double[:] decompHF = self.w.decompositionHighFilter
-        cdef double[:] decompLF = self.w.decompositionLowFilter
+        cdef double[:] decompHF = np.array(self.w.decompositionHighFilter)
+        cdef double[:] decompLF = np.array(self.w.decompositionLowFilter)
 
         cdef np.ndarray arrHilbert = np.zeros(level)
         cdef double[:] arrHilbert_view = arrHilbert
@@ -49,8 +46,8 @@ class WaveletTransform:
     @cython.wraparound(False)
     def idwt(self, double[:] arrHilbert, int level):
 
-        cdef double[:] reconLF = self.w.reconstructionLowFilter
-        cdef double[:] reconHF = self.w.reconstructionHighFilter
+        cdef double[:] reconLF = np.array(self.w.reconstructionLowFilter)
+        cdef double[:] reconHF = np.array(self.w.reconstructionHighFilter)
 
         cdef np.ndarray arrTime = np.zeros(level)
         cdef double[:] arrTime_view = arrTime

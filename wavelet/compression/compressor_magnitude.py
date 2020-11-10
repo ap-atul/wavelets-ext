@@ -38,9 +38,9 @@ class CompressorMagnitude:
         array_like
             thresholded data/ coefficients
         """
-        data = np.asanyarray(data)
-        self.__magnitude = np.sum(data.flatten(), axis=0)
-        return self.__compressor.compress(data, (self.__magnitude / len(data)))
+        self.__magnitude = np.sum(data, axis=0)
+        lenD = len(data)
+        return self.__compressor.compress(data, (self.__magnitude / lenD))
 
     def getCompressionRate(self, data):
         """
