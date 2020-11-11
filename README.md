@@ -1,7 +1,8 @@
 # Wavelets-Extension
 A re-implementation of Wavelets package using Cypthon to improve the speed. 
 
-All the functions are similar to the main Wavelets repository
+All the functions are similar to the main Wavelets repository. The sole purpose of this project is to 
+be used in audio de-noising of sound files. 
 
 ## Building
 * Clone the repo
@@ -9,7 +10,7 @@ All the functions are similar to the main Wavelets repository
 ```
 $ python setup_dev.py build_ext --inplace
 ```
-* Just like other api call the functions
+* Just like other api calls
 
 ## API
 * I only needed the Compressors and the 1D wavelet decomposition and reconstruction

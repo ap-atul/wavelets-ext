@@ -1113,7 +1113,7 @@ typedef npy_clongdouble __pyx_t_5numpy_clongdouble_t;
  */
 typedef npy_cdouble __pyx_t_5numpy_complex_t;
 
-/* "wavelet/extension/base_transform.pyx":10
+/* "wavelet/extension/base_transform.pyx":8
  * 
  * 
  * cdef class BaseTransform:             # <<<<<<<<<<<<<<
@@ -1757,7 +1757,6 @@ static const char __pyx_k_cline_in_traceback[] = "cline_in_traceback";
 static const char __pyx_k_pyx_unpickle_BaseTransform[] = "__pyx_unpickle_BaseTransform";
 static const char __pyx_k_numpy_core_multiarray_failed_to[] = "numpy.core.multiarray failed to import";
 static const char __pyx_k_unknown_dtype_code_in_numpy_pxd[] = "unknown dtype code in numpy.pxd (%d)";
-static const char __pyx_k_Base_Transform_for_doing_basic_c[] = "Base Transform for doing basic calls for dwt & idwt based on the dimensions called";
 static const char __pyx_k_Format_string_allocated_too_shor[] = "Format string allocated too short, see comment in numpy.pxd";
 static const char __pyx_k_Incompatible_checksums_s_vs_0xd4[] = "Incompatible checksums (%s vs 0xd41d8cd = ())";
 static const char __pyx_k_Non_native_byte_order_not_suppor[] = "Non-native byte order not supported";
@@ -1835,7 +1834,7 @@ static PyObject *__pyx_tuple__6;
 static PyObject *__pyx_codeobj__7;
 /* Late includes */
 
-/* "wavelet/extension/base_transform.pyx":11
+/* "wavelet/extension/base_transform.pyx":9
  * 
  * cdef class BaseTransform:
  *     def __init__(self, waveletName):             # <<<<<<<<<<<<<<
@@ -1872,7 +1871,7 @@ static int __pyx_pw_7wavelet_9extension_14base_transform_13BaseTransform_1__init
         else goto __pyx_L5_argtuple_error;
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__init__") < 0)) __PYX_ERR(0, 11, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__init__") < 0)) __PYX_ERR(0, 9, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 1) {
       goto __pyx_L5_argtuple_error;
@@ -1883,7 +1882,7 @@ static int __pyx_pw_7wavelet_9extension_14base_transform_13BaseTransform_1__init
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__init__", 1, 1, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 11, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__init__", 1, 1, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 9, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("wavelet.extension.base_transform.BaseTransform.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -1907,14 +1906,14 @@ static int __pyx_pf_7wavelet_9extension_14base_transform_13BaseTransform___init_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__init__", 0);
 
-  /* "wavelet/extension/base_transform.pyx":12
+  /* "wavelet/extension/base_transform.pyx":10
  * cdef class BaseTransform:
  *     def __init__(self, waveletName):
  *         self.wavelet = WaveletTransform(waveletName)             # <<<<<<<<<<<<<<
  * 
  *     cpdef waveDec1(self, np.ndarray arrTime, int level):
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_WaveletTransform); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 12, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_WaveletTransform); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 10, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_3 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_2))) {
@@ -1928,13 +1927,13 @@ static int __pyx_pf_7wavelet_9extension_14base_transform_13BaseTransform___init_
   }
   __pyx_t_1 = (__pyx_t_3) ? __Pyx_PyObject_Call2Args(__pyx_t_2, __pyx_t_3, __pyx_v_waveletName) : __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_v_waveletName);
   __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 12, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 10, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  if (__Pyx_PyObject_SetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_wavelet, __pyx_t_1) < 0) __PYX_ERR(0, 12, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_wavelet, __pyx_t_1) < 0) __PYX_ERR(0, 10, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "wavelet/extension/base_transform.pyx":11
+  /* "wavelet/extension/base_transform.pyx":9
  * 
  * cdef class BaseTransform:
  *     def __init__(self, waveletName):             # <<<<<<<<<<<<<<
@@ -1956,7 +1955,7 @@ static int __pyx_pf_7wavelet_9extension_14base_transform_13BaseTransform___init_
   return __pyx_r;
 }
 
-/* "wavelet/extension/base_transform.pyx":14
+/* "wavelet/extension/base_transform.pyx":12
  *         self.wavelet = WaveletTransform(waveletName)
  * 
  *     cpdef waveDec1(self, np.ndarray arrTime, int level):             # <<<<<<<<<<<<<<
@@ -1996,11 +1995,11 @@ static PyObject *__pyx_f_7wavelet_9extension_14base_transform_13BaseTransform_wa
     if (unlikely(!__Pyx_object_dict_version_matches(((PyObject *)__pyx_v_self), __pyx_tp_dict_version, __pyx_obj_dict_version))) {
       PY_UINT64_T __pyx_type_dict_guard = __Pyx_get_tp_dict_version(((PyObject *)__pyx_v_self));
       #endif
-      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_waveDec1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 14, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_waveDec1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 12, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       if (!PyCFunction_Check(__pyx_t_1) || (PyCFunction_GET_FUNCTION(__pyx_t_1) != (PyCFunction)(void*)__pyx_pw_7wavelet_9extension_14base_transform_13BaseTransform_3waveDec1)) {
         __Pyx_XDECREF(__pyx_r);
-        __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_level); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 14, __pyx_L1_error)
+        __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_level); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 12, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
         __Pyx_INCREF(__pyx_t_1);
         __pyx_t_4 = __pyx_t_1; __pyx_t_5 = NULL;
@@ -2018,7 +2017,7 @@ static PyObject *__pyx_f_7wavelet_9extension_14base_transform_13BaseTransform_wa
         #if CYTHON_FAST_PYCALL
         if (PyFunction_Check(__pyx_t_4)) {
           PyObject *__pyx_temp[3] = {__pyx_t_5, ((PyObject *)__pyx_v_arrTime), __pyx_t_3};
-          __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 14, __pyx_L1_error)
+          __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 12, __pyx_L1_error)
           __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
           __Pyx_GOTREF(__pyx_t_2);
           __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -2027,14 +2026,14 @@ static PyObject *__pyx_f_7wavelet_9extension_14base_transform_13BaseTransform_wa
         #if CYTHON_FAST_PYCCALL
         if (__Pyx_PyFastCFunction_Check(__pyx_t_4)) {
           PyObject *__pyx_temp[3] = {__pyx_t_5, ((PyObject *)__pyx_v_arrTime), __pyx_t_3};
-          __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 14, __pyx_L1_error)
+          __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 12, __pyx_L1_error)
           __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
           __Pyx_GOTREF(__pyx_t_2);
           __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
         } else
         #endif
         {
-          __pyx_t_7 = PyTuple_New(2+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 14, __pyx_L1_error)
+          __pyx_t_7 = PyTuple_New(2+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 12, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_7);
           if (__pyx_t_5) {
             __Pyx_GIVEREF(__pyx_t_5); PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_5); __pyx_t_5 = NULL;
@@ -2045,7 +2044,7 @@ static PyObject *__pyx_f_7wavelet_9extension_14base_transform_13BaseTransform_wa
           __Pyx_GIVEREF(__pyx_t_3);
           PyTuple_SET_ITEM(__pyx_t_7, 1+__pyx_t_6, __pyx_t_3);
           __pyx_t_3 = 0;
-          __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_7, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 14, __pyx_L1_error)
+          __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_7, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 12, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_2);
           __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
         }
@@ -2068,7 +2067,7 @@ static PyObject *__pyx_f_7wavelet_9extension_14base_transform_13BaseTransform_wa
     #endif
   }
 
-  /* "wavelet/extension/base_transform.pyx":15
+  /* "wavelet/extension/base_transform.pyx":13
  * 
  *     cpdef waveDec1(self, np.ndarray arrTime, int level):
  *         cdef int length = 0             # <<<<<<<<<<<<<<
@@ -2077,14 +2076,14 @@ static PyObject *__pyx_f_7wavelet_9extension_14base_transform_13BaseTransform_wa
  */
   __pyx_v_length = 0;
 
-  /* "wavelet/extension/base_transform.pyx":16
+  /* "wavelet/extension/base_transform.pyx":14
  *     cpdef waveDec1(self, np.ndarray arrTime, int level):
  *         cdef int length = 0
  *         cdef np.ndarray arrHilbert = arrTime.copy()             # <<<<<<<<<<<<<<
  *         cdef int dataLength = len(arrHilbert)
  *         cdef int transformWaveletLength = 2
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_arrTime), __pyx_n_s_copy); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 16, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_arrTime), __pyx_n_s_copy); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 14, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_4 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
@@ -2098,24 +2097,24 @@ static PyObject *__pyx_f_7wavelet_9extension_14base_transform_13BaseTransform_wa
   }
   __pyx_t_1 = (__pyx_t_4) ? __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_4) : __Pyx_PyObject_CallNoArg(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 16, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 14, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  if (!(likely(((__pyx_t_1) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_1, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 16, __pyx_L1_error)
+  if (!(likely(((__pyx_t_1) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_1, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 14, __pyx_L1_error)
   __pyx_v_arrHilbert = ((PyArrayObject *)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "wavelet/extension/base_transform.pyx":17
+  /* "wavelet/extension/base_transform.pyx":15
  *         cdef int length = 0
  *         cdef np.ndarray arrHilbert = arrTime.copy()
  *         cdef int dataLength = len(arrHilbert)             # <<<<<<<<<<<<<<
  *         cdef int transformWaveletLength = 2
  *         cdef np.ndarray arrTemp
  */
-  __pyx_t_8 = PyObject_Length(((PyObject *)__pyx_v_arrHilbert)); if (unlikely(__pyx_t_8 == ((Py_ssize_t)-1))) __PYX_ERR(0, 17, __pyx_L1_error)
+  __pyx_t_8 = PyObject_Length(((PyObject *)__pyx_v_arrHilbert)); if (unlikely(__pyx_t_8 == ((Py_ssize_t)-1))) __PYX_ERR(0, 15, __pyx_L1_error)
   __pyx_v_dataLength = __pyx_t_8;
 
-  /* "wavelet/extension/base_transform.pyx":18
+  /* "wavelet/extension/base_transform.pyx":16
  *         cdef np.ndarray arrHilbert = arrTime.copy()
  *         cdef int dataLength = len(arrHilbert)
  *         cdef int transformWaveletLength = 2             # <<<<<<<<<<<<<<
@@ -2124,7 +2123,7 @@ static PyObject *__pyx_f_7wavelet_9extension_14base_transform_13BaseTransform_wa
  */
   __pyx_v_transformWaveletLength = 2;
 
-  /* "wavelet/extension/base_transform.pyx":21
+  /* "wavelet/extension/base_transform.pyx":19
  *         cdef np.ndarray arrTemp
  * 
  *         while dataLength >= transformWaveletLength and length < level:             # <<<<<<<<<<<<<<
@@ -2143,19 +2142,19 @@ static PyObject *__pyx_f_7wavelet_9extension_14base_transform_13BaseTransform_wa
     __pyx_L5_bool_binop_done:;
     if (!__pyx_t_9) break;
 
-    /* "wavelet/extension/base_transform.pyx":22
+    /* "wavelet/extension/base_transform.pyx":20
  * 
  *         while dataLength >= transformWaveletLength and length < level:
  *             arrTemp = self.wavelet.dwt(arrHilbert, dataLength)             # <<<<<<<<<<<<<<
  *             arrHilbert[: len(arrTemp)] = arrTemp
  * 
  */
-    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_wavelet); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 22, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_wavelet); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 20, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_dwt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 22, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_dwt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 20, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_dataLength); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 22, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_dataLength); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 20, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __pyx_t_7 = NULL;
     __pyx_t_6 = 0;
@@ -2172,7 +2171,7 @@ static PyObject *__pyx_f_7wavelet_9extension_14base_transform_13BaseTransform_wa
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_4)) {
       PyObject *__pyx_temp[3] = {__pyx_t_7, ((PyObject *)__pyx_v_arrHilbert), __pyx_t_2};
-      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 22, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 20, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -2181,14 +2180,14 @@ static PyObject *__pyx_f_7wavelet_9extension_14base_transform_13BaseTransform_wa
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_4)) {
       PyObject *__pyx_temp[3] = {__pyx_t_7, ((PyObject *)__pyx_v_arrHilbert), __pyx_t_2};
-      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 22, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 20, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     } else
     #endif
     {
-      __pyx_t_3 = PyTuple_New(2+__pyx_t_6); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 22, __pyx_L1_error)
+      __pyx_t_3 = PyTuple_New(2+__pyx_t_6); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 20, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       if (__pyx_t_7) {
         __Pyx_GIVEREF(__pyx_t_7); PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_7); __pyx_t_7 = NULL;
@@ -2199,26 +2198,26 @@ static PyObject *__pyx_f_7wavelet_9extension_14base_transform_13BaseTransform_wa
       __Pyx_GIVEREF(__pyx_t_2);
       PyTuple_SET_ITEM(__pyx_t_3, 1+__pyx_t_6, __pyx_t_2);
       __pyx_t_2 = 0;
-      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_3, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 22, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_3, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 20, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     }
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (!(likely(((__pyx_t_1) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_1, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 22, __pyx_L1_error)
+    if (!(likely(((__pyx_t_1) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_1, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 20, __pyx_L1_error)
     __Pyx_XDECREF_SET(__pyx_v_arrTemp, ((PyArrayObject *)__pyx_t_1));
     __pyx_t_1 = 0;
 
-    /* "wavelet/extension/base_transform.pyx":23
+    /* "wavelet/extension/base_transform.pyx":21
  *         while dataLength >= transformWaveletLength and length < level:
  *             arrTemp = self.wavelet.dwt(arrHilbert, dataLength)
  *             arrHilbert[: len(arrTemp)] = arrTemp             # <<<<<<<<<<<<<<
  * 
  *             dataLength >>= 1
  */
-    __pyx_t_8 = PyObject_Length(((PyObject *)__pyx_v_arrTemp)); if (unlikely(__pyx_t_8 == ((Py_ssize_t)-1))) __PYX_ERR(0, 23, __pyx_L1_error)
-    if (__Pyx_PyObject_SetSlice(((PyObject *)__pyx_v_arrHilbert), ((PyObject *)__pyx_v_arrTemp), 0, __pyx_t_8, NULL, NULL, NULL, 0, 1, 1) < 0) __PYX_ERR(0, 23, __pyx_L1_error)
+    __pyx_t_8 = PyObject_Length(((PyObject *)__pyx_v_arrTemp)); if (unlikely(__pyx_t_8 == ((Py_ssize_t)-1))) __PYX_ERR(0, 21, __pyx_L1_error)
+    if (__Pyx_PyObject_SetSlice(((PyObject *)__pyx_v_arrHilbert), ((PyObject *)__pyx_v_arrTemp), 0, __pyx_t_8, NULL, NULL, NULL, 0, 1, 1) < 0) __PYX_ERR(0, 21, __pyx_L1_error)
 
-    /* "wavelet/extension/base_transform.pyx":25
+    /* "wavelet/extension/base_transform.pyx":23
  *             arrHilbert[: len(arrTemp)] = arrTemp
  * 
  *             dataLength >>= 1             # <<<<<<<<<<<<<<
@@ -2227,7 +2226,7 @@ static PyObject *__pyx_f_7wavelet_9extension_14base_transform_13BaseTransform_wa
  */
     __pyx_v_dataLength = (__pyx_v_dataLength >> 1);
 
-    /* "wavelet/extension/base_transform.pyx":26
+    /* "wavelet/extension/base_transform.pyx":24
  * 
  *             dataLength >>= 1
  *             length += 1             # <<<<<<<<<<<<<<
@@ -2237,7 +2236,7 @@ static PyObject *__pyx_f_7wavelet_9extension_14base_transform_13BaseTransform_wa
     __pyx_v_length = (__pyx_v_length + 1);
   }
 
-  /* "wavelet/extension/base_transform.pyx":28
+  /* "wavelet/extension/base_transform.pyx":26
  *             length += 1
  * 
  *         return arrHilbert             # <<<<<<<<<<<<<<
@@ -2249,7 +2248,7 @@ static PyObject *__pyx_f_7wavelet_9extension_14base_transform_13BaseTransform_wa
   __pyx_r = ((PyObject *)__pyx_v_arrHilbert);
   goto __pyx_L0;
 
-  /* "wavelet/extension/base_transform.pyx":14
+  /* "wavelet/extension/base_transform.pyx":12
  *         self.wavelet = WaveletTransform(waveletName)
  * 
  *     cpdef waveDec1(self, np.ndarray arrTime, int level):             # <<<<<<<<<<<<<<
@@ -2309,11 +2308,11 @@ static PyObject *__pyx_pw_7wavelet_9extension_14base_transform_13BaseTransform_3
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_level)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("waveDec1", 1, 2, 2, 1); __PYX_ERR(0, 14, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("waveDec1", 1, 2, 2, 1); __PYX_ERR(0, 12, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "waveDec1") < 0)) __PYX_ERR(0, 14, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "waveDec1") < 0)) __PYX_ERR(0, 12, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -2322,17 +2321,17 @@ static PyObject *__pyx_pw_7wavelet_9extension_14base_transform_13BaseTransform_3
       values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
     }
     __pyx_v_arrTime = ((PyArrayObject *)values[0]);
-    __pyx_v_level = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_level == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 14, __pyx_L3_error)
+    __pyx_v_level = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_level == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 12, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("waveDec1", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 14, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("waveDec1", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 12, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("wavelet.extension.base_transform.BaseTransform.waveDec1", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_arrTime), __pyx_ptype_5numpy_ndarray, 1, "arrTime", 0))) __PYX_ERR(0, 14, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_arrTime), __pyx_ptype_5numpy_ndarray, 1, "arrTime", 0))) __PYX_ERR(0, 12, __pyx_L1_error)
   __pyx_r = __pyx_pf_7wavelet_9extension_14base_transform_13BaseTransform_2waveDec1(((struct __pyx_obj_7wavelet_9extension_14base_transform_BaseTransform *)__pyx_v_self), __pyx_v_arrTime, __pyx_v_level);
 
   /* function exit code */
@@ -2353,7 +2352,7 @@ static PyObject *__pyx_pf_7wavelet_9extension_14base_transform_13BaseTransform_2
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("waveDec1", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_7wavelet_9extension_14base_transform_13BaseTransform_waveDec1(__pyx_v_self, __pyx_v_arrTime, __pyx_v_level, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 14, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_7wavelet_9extension_14base_transform_13BaseTransform_waveDec1(__pyx_v_self, __pyx_v_arrTime, __pyx_v_level, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -2370,7 +2369,7 @@ static PyObject *__pyx_pf_7wavelet_9extension_14base_transform_13BaseTransform_2
   return __pyx_r;
 }
 
-/* "wavelet/extension/base_transform.pyx":30
+/* "wavelet/extension/base_transform.pyx":28
  *         return arrHilbert
  * 
  *     cpdef waveRec1(self, np.ndarray arrHilbert, int level):             # <<<<<<<<<<<<<<
@@ -2414,11 +2413,11 @@ static PyObject *__pyx_f_7wavelet_9extension_14base_transform_13BaseTransform_wa
     if (unlikely(!__Pyx_object_dict_version_matches(((PyObject *)__pyx_v_self), __pyx_tp_dict_version, __pyx_obj_dict_version))) {
       PY_UINT64_T __pyx_type_dict_guard = __Pyx_get_tp_dict_version(((PyObject *)__pyx_v_self));
       #endif
-      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_waveRec1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 30, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_waveRec1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 28, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       if (!PyCFunction_Check(__pyx_t_1) || (PyCFunction_GET_FUNCTION(__pyx_t_1) != (PyCFunction)(void*)__pyx_pw_7wavelet_9extension_14base_transform_13BaseTransform_5waveRec1)) {
         __Pyx_XDECREF(__pyx_r);
-        __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_level); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 30, __pyx_L1_error)
+        __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_level); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 28, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
         __Pyx_INCREF(__pyx_t_1);
         __pyx_t_4 = __pyx_t_1; __pyx_t_5 = NULL;
@@ -2436,7 +2435,7 @@ static PyObject *__pyx_f_7wavelet_9extension_14base_transform_13BaseTransform_wa
         #if CYTHON_FAST_PYCALL
         if (PyFunction_Check(__pyx_t_4)) {
           PyObject *__pyx_temp[3] = {__pyx_t_5, ((PyObject *)__pyx_v_arrHilbert), __pyx_t_3};
-          __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 30, __pyx_L1_error)
+          __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
           __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
           __Pyx_GOTREF(__pyx_t_2);
           __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -2445,14 +2444,14 @@ static PyObject *__pyx_f_7wavelet_9extension_14base_transform_13BaseTransform_wa
         #if CYTHON_FAST_PYCCALL
         if (__Pyx_PyFastCFunction_Check(__pyx_t_4)) {
           PyObject *__pyx_temp[3] = {__pyx_t_5, ((PyObject *)__pyx_v_arrHilbert), __pyx_t_3};
-          __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 30, __pyx_L1_error)
+          __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
           __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
           __Pyx_GOTREF(__pyx_t_2);
           __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
         } else
         #endif
         {
-          __pyx_t_7 = PyTuple_New(2+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 30, __pyx_L1_error)
+          __pyx_t_7 = PyTuple_New(2+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 28, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_7);
           if (__pyx_t_5) {
             __Pyx_GIVEREF(__pyx_t_5); PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_5); __pyx_t_5 = NULL;
@@ -2463,7 +2462,7 @@ static PyObject *__pyx_f_7wavelet_9extension_14base_transform_13BaseTransform_wa
           __Pyx_GIVEREF(__pyx_t_3);
           PyTuple_SET_ITEM(__pyx_t_7, 1+__pyx_t_6, __pyx_t_3);
           __pyx_t_3 = 0;
-          __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_7, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 30, __pyx_L1_error)
+          __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_7, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_2);
           __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
         }
@@ -2486,14 +2485,14 @@ static PyObject *__pyx_f_7wavelet_9extension_14base_transform_13BaseTransform_wa
     #endif
   }
 
-  /* "wavelet/extension/base_transform.pyx":31
+  /* "wavelet/extension/base_transform.pyx":29
  * 
  *     cpdef waveRec1(self, np.ndarray arrHilbert, int level):
  *         cdef np.ndarray arrTime = arrHilbert.copy()             # <<<<<<<<<<<<<<
  *         cdef np.ndarray arrTemp
  *         cdef int dataLength = len(arrTime)
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_arrHilbert), __pyx_n_s_copy); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 31, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_arrHilbert), __pyx_n_s_copy); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 29, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_4 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
@@ -2507,24 +2506,24 @@ static PyObject *__pyx_f_7wavelet_9extension_14base_transform_13BaseTransform_wa
   }
   __pyx_t_1 = (__pyx_t_4) ? __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_4) : __Pyx_PyObject_CallNoArg(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 31, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 29, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  if (!(likely(((__pyx_t_1) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_1, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 31, __pyx_L1_error)
+  if (!(likely(((__pyx_t_1) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_1, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 29, __pyx_L1_error)
   __pyx_v_arrTime = ((PyArrayObject *)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "wavelet/extension/base_transform.pyx":33
+  /* "wavelet/extension/base_transform.pyx":31
  *         cdef np.ndarray arrTime = arrHilbert.copy()
  *         cdef np.ndarray arrTemp
  *         cdef int dataLength = len(arrTime)             # <<<<<<<<<<<<<<
  *         cdef int transformWaveletLength = 2
  *         cdef int h = transformWaveletLength
  */
-  __pyx_t_8 = PyObject_Length(((PyObject *)__pyx_v_arrTime)); if (unlikely(__pyx_t_8 == ((Py_ssize_t)-1))) __PYX_ERR(0, 33, __pyx_L1_error)
+  __pyx_t_8 = PyObject_Length(((PyObject *)__pyx_v_arrTime)); if (unlikely(__pyx_t_8 == ((Py_ssize_t)-1))) __PYX_ERR(0, 31, __pyx_L1_error)
   __pyx_v_dataLength = __pyx_t_8;
 
-  /* "wavelet/extension/base_transform.pyx":34
+  /* "wavelet/extension/base_transform.pyx":32
  *         cdef np.ndarray arrTemp
  *         cdef int dataLength = len(arrTime)
  *         cdef int transformWaveletLength = 2             # <<<<<<<<<<<<<<
@@ -2533,7 +2532,7 @@ static PyObject *__pyx_f_7wavelet_9extension_14base_transform_13BaseTransform_wa
  */
   __pyx_v_transformWaveletLength = 2;
 
-  /* "wavelet/extension/base_transform.pyx":35
+  /* "wavelet/extension/base_transform.pyx":33
  *         cdef int dataLength = len(arrTime)
  *         cdef int transformWaveletLength = 2
  *         cdef int h = transformWaveletLength             # <<<<<<<<<<<<<<
@@ -2542,16 +2541,16 @@ static PyObject *__pyx_f_7wavelet_9extension_14base_transform_13BaseTransform_wa
  */
   __pyx_v_h = __pyx_v_transformWaveletLength;
 
-  /* "wavelet/extension/base_transform.pyx":37
+  /* "wavelet/extension/base_transform.pyx":35
  *         cdef int h = transformWaveletLength
  * 
  *         cdef int steps = getExponent(dataLength)             # <<<<<<<<<<<<<<
  *         for _ in range(level, steps):
  *             h <<= 1
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_getExponent); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 37, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_getExponent); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 35, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_dataLength); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 37, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_dataLength); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 35, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_t_7 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_2))) {
@@ -2566,14 +2565,14 @@ static PyObject *__pyx_f_7wavelet_9extension_14base_transform_13BaseTransform_wa
   __pyx_t_1 = (__pyx_t_7) ? __Pyx_PyObject_Call2Args(__pyx_t_2, __pyx_t_7, __pyx_t_4) : __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_4);
   __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 37, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 35, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_6 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_6 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 37, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_6 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 35, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_steps = __pyx_t_6;
 
-  /* "wavelet/extension/base_transform.pyx":38
+  /* "wavelet/extension/base_transform.pyx":36
  * 
  *         cdef int steps = getExponent(dataLength)
  *         for _ in range(level, steps):             # <<<<<<<<<<<<<<
@@ -2585,7 +2584,7 @@ static PyObject *__pyx_f_7wavelet_9extension_14base_transform_13BaseTransform_wa
   for (__pyx_t_10 = __pyx_v_level; __pyx_t_10 < __pyx_t_9; __pyx_t_10+=1) {
     __pyx_v__ = __pyx_t_10;
 
-    /* "wavelet/extension/base_transform.pyx":39
+    /* "wavelet/extension/base_transform.pyx":37
  *         cdef int steps = getExponent(dataLength)
  *         for _ in range(level, steps):
  *             h <<= 1             # <<<<<<<<<<<<<<
@@ -2595,7 +2594,7 @@ static PyObject *__pyx_f_7wavelet_9extension_14base_transform_13BaseTransform_wa
     __pyx_v_h = (__pyx_v_h << 1);
   }
 
-  /* "wavelet/extension/base_transform.pyx":41
+  /* "wavelet/extension/base_transform.pyx":39
  *             h <<= 1
  * 
  *         while len(arrTime) >= h >= transformWaveletLength:             # <<<<<<<<<<<<<<
@@ -2603,7 +2602,7 @@ static PyObject *__pyx_f_7wavelet_9extension_14base_transform_13BaseTransform_wa
  *             arrTime[: len(arrTemp)] = arrTemp
  */
   while (1) {
-    __pyx_t_8 = PyObject_Length(((PyObject *)__pyx_v_arrTime)); if (unlikely(__pyx_t_8 == ((Py_ssize_t)-1))) __PYX_ERR(0, 41, __pyx_L1_error)
+    __pyx_t_8 = PyObject_Length(((PyObject *)__pyx_v_arrTime)); if (unlikely(__pyx_t_8 == ((Py_ssize_t)-1))) __PYX_ERR(0, 39, __pyx_L1_error)
     __pyx_t_11 = (__pyx_t_8 >= __pyx_v_h);
     if (__pyx_t_11) {
       __pyx_t_11 = (__pyx_v_h >= __pyx_v_transformWaveletLength);
@@ -2611,19 +2610,19 @@ static PyObject *__pyx_f_7wavelet_9extension_14base_transform_13BaseTransform_wa
     __pyx_t_12 = (__pyx_t_11 != 0);
     if (!__pyx_t_12) break;
 
-    /* "wavelet/extension/base_transform.pyx":42
+    /* "wavelet/extension/base_transform.pyx":40
  * 
  *         while len(arrTime) >= h >= transformWaveletLength:
  *             arrTemp = self.wavelet.idwt(arrTime, h)             # <<<<<<<<<<<<<<
  *             arrTime[: len(arrTemp)] = arrTemp
  * 
  */
-    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_wavelet); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 42, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_wavelet); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 40, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_idwt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 42, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_idwt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 40, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_h); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 42, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_h); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 40, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __pyx_t_7 = NULL;
     __pyx_t_6 = 0;
@@ -2640,7 +2639,7 @@ static PyObject *__pyx_f_7wavelet_9extension_14base_transform_13BaseTransform_wa
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_4)) {
       PyObject *__pyx_temp[3] = {__pyx_t_7, ((PyObject *)__pyx_v_arrTime), __pyx_t_2};
-      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 42, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 40, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -2649,14 +2648,14 @@ static PyObject *__pyx_f_7wavelet_9extension_14base_transform_13BaseTransform_wa
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_4)) {
       PyObject *__pyx_temp[3] = {__pyx_t_7, ((PyObject *)__pyx_v_arrTime), __pyx_t_2};
-      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 42, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 40, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     } else
     #endif
     {
-      __pyx_t_3 = PyTuple_New(2+__pyx_t_6); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 42, __pyx_L1_error)
+      __pyx_t_3 = PyTuple_New(2+__pyx_t_6); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 40, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       if (__pyx_t_7) {
         __Pyx_GIVEREF(__pyx_t_7); PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_7); __pyx_t_7 = NULL;
@@ -2667,26 +2666,26 @@ static PyObject *__pyx_f_7wavelet_9extension_14base_transform_13BaseTransform_wa
       __Pyx_GIVEREF(__pyx_t_2);
       PyTuple_SET_ITEM(__pyx_t_3, 1+__pyx_t_6, __pyx_t_2);
       __pyx_t_2 = 0;
-      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_3, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 42, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_3, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 40, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     }
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (!(likely(((__pyx_t_1) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_1, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 42, __pyx_L1_error)
+    if (!(likely(((__pyx_t_1) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_1, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 40, __pyx_L1_error)
     __Pyx_XDECREF_SET(__pyx_v_arrTemp, ((PyArrayObject *)__pyx_t_1));
     __pyx_t_1 = 0;
 
-    /* "wavelet/extension/base_transform.pyx":43
+    /* "wavelet/extension/base_transform.pyx":41
  *         while len(arrTime) >= h >= transformWaveletLength:
  *             arrTemp = self.wavelet.idwt(arrTime, h)
  *             arrTime[: len(arrTemp)] = arrTemp             # <<<<<<<<<<<<<<
  * 
  *             h <<= 1
  */
-    __pyx_t_8 = PyObject_Length(((PyObject *)__pyx_v_arrTemp)); if (unlikely(__pyx_t_8 == ((Py_ssize_t)-1))) __PYX_ERR(0, 43, __pyx_L1_error)
-    if (__Pyx_PyObject_SetSlice(((PyObject *)__pyx_v_arrTime), ((PyObject *)__pyx_v_arrTemp), 0, __pyx_t_8, NULL, NULL, NULL, 0, 1, 1) < 0) __PYX_ERR(0, 43, __pyx_L1_error)
+    __pyx_t_8 = PyObject_Length(((PyObject *)__pyx_v_arrTemp)); if (unlikely(__pyx_t_8 == ((Py_ssize_t)-1))) __PYX_ERR(0, 41, __pyx_L1_error)
+    if (__Pyx_PyObject_SetSlice(((PyObject *)__pyx_v_arrTime), ((PyObject *)__pyx_v_arrTemp), 0, __pyx_t_8, NULL, NULL, NULL, 0, 1, 1) < 0) __PYX_ERR(0, 41, __pyx_L1_error)
 
-    /* "wavelet/extension/base_transform.pyx":45
+    /* "wavelet/extension/base_transform.pyx":43
  *             arrTime[: len(arrTemp)] = arrTemp
  * 
  *             h <<= 1             # <<<<<<<<<<<<<<
@@ -2696,7 +2695,7 @@ static PyObject *__pyx_f_7wavelet_9extension_14base_transform_13BaseTransform_wa
     __pyx_v_h = (__pyx_v_h << 1);
   }
 
-  /* "wavelet/extension/base_transform.pyx":47
+  /* "wavelet/extension/base_transform.pyx":45
  *             h <<= 1
  * 
  *         return arrTime             # <<<<<<<<<<<<<<
@@ -2706,7 +2705,7 @@ static PyObject *__pyx_f_7wavelet_9extension_14base_transform_13BaseTransform_wa
   __pyx_r = ((PyObject *)__pyx_v_arrTime);
   goto __pyx_L0;
 
-  /* "wavelet/extension/base_transform.pyx":30
+  /* "wavelet/extension/base_transform.pyx":28
  *         return arrHilbert
  * 
  *     cpdef waveRec1(self, np.ndarray arrHilbert, int level):             # <<<<<<<<<<<<<<
@@ -2766,11 +2765,11 @@ static PyObject *__pyx_pw_7wavelet_9extension_14base_transform_13BaseTransform_5
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_level)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("waveRec1", 1, 2, 2, 1); __PYX_ERR(0, 30, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("waveRec1", 1, 2, 2, 1); __PYX_ERR(0, 28, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "waveRec1") < 0)) __PYX_ERR(0, 30, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "waveRec1") < 0)) __PYX_ERR(0, 28, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -2779,17 +2778,17 @@ static PyObject *__pyx_pw_7wavelet_9extension_14base_transform_13BaseTransform_5
       values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
     }
     __pyx_v_arrHilbert = ((PyArrayObject *)values[0]);
-    __pyx_v_level = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_level == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 30, __pyx_L3_error)
+    __pyx_v_level = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_level == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 28, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("waveRec1", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 30, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("waveRec1", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 28, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("wavelet.extension.base_transform.BaseTransform.waveRec1", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_arrHilbert), __pyx_ptype_5numpy_ndarray, 1, "arrHilbert", 0))) __PYX_ERR(0, 30, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_arrHilbert), __pyx_ptype_5numpy_ndarray, 1, "arrHilbert", 0))) __PYX_ERR(0, 28, __pyx_L1_error)
   __pyx_r = __pyx_pf_7wavelet_9extension_14base_transform_13BaseTransform_4waveRec1(((struct __pyx_obj_7wavelet_9extension_14base_transform_BaseTransform *)__pyx_v_self), __pyx_v_arrHilbert, __pyx_v_level);
 
   /* function exit code */
@@ -2810,7 +2809,7 @@ static PyObject *__pyx_pf_7wavelet_9extension_14base_transform_13BaseTransform_4
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("waveRec1", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_7wavelet_9extension_14base_transform_13BaseTransform_waveRec1(__pyx_v_self, __pyx_v_arrHilbert, __pyx_v_level, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 30, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_7wavelet_9extension_14base_transform_13BaseTransform_waveRec1(__pyx_v_self, __pyx_v_arrHilbert, __pyx_v_level, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -5203,7 +5202,7 @@ static PyModuleDef_Slot __pyx_moduledef_slots[] = {
 static struct PyModuleDef __pyx_moduledef = {
     PyModuleDef_HEAD_INIT,
     "base_transform",
-    __pyx_k_Base_Transform_for_doing_basic_c, /* m_doc */
+    0, /* m_doc */
   #if CYTHON_PEP489_MULTI_PHASE_INIT
     0, /* m_size */
   #else
@@ -5287,7 +5286,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {0, 0, 0, 0, 0, 0, 0}
 };
 static CYTHON_SMALL_CODE int __Pyx_InitCachedBuiltins(void) {
-  __pyx_builtin_range = __Pyx_GetBuiltinName(__pyx_n_s_range); if (!__pyx_builtin_range) __PYX_ERR(0, 38, __pyx_L1_error)
+  __pyx_builtin_range = __Pyx_GetBuiltinName(__pyx_n_s_range); if (!__pyx_builtin_range) __PYX_ERR(0, 36, __pyx_L1_error)
   __pyx_builtin_RuntimeError = __Pyx_GetBuiltinName(__pyx_n_s_RuntimeError); if (!__pyx_builtin_RuntimeError) __PYX_ERR(2, 777, __pyx_L1_error)
   __pyx_builtin_ValueError = __Pyx_GetBuiltinName(__pyx_n_s_ValueError); if (!__pyx_builtin_ValueError) __PYX_ERR(2, 781, __pyx_L1_error)
   __pyx_builtin_ImportError = __Pyx_GetBuiltinName(__pyx_n_s_ImportError); if (!__pyx_builtin_ImportError) __PYX_ERR(2, 959, __pyx_L1_error)
@@ -5421,16 +5420,16 @@ static int __Pyx_modinit_type_init_code(void) {
   __pyx_vtabptr_7wavelet_9extension_14base_transform_BaseTransform = &__pyx_vtable_7wavelet_9extension_14base_transform_BaseTransform;
   __pyx_vtable_7wavelet_9extension_14base_transform_BaseTransform.waveDec1 = (PyObject *(*)(struct __pyx_obj_7wavelet_9extension_14base_transform_BaseTransform *, PyArrayObject *, int, int __pyx_skip_dispatch))__pyx_f_7wavelet_9extension_14base_transform_13BaseTransform_waveDec1;
   __pyx_vtable_7wavelet_9extension_14base_transform_BaseTransform.waveRec1 = (PyObject *(*)(struct __pyx_obj_7wavelet_9extension_14base_transform_BaseTransform *, PyArrayObject *, int, int __pyx_skip_dispatch))__pyx_f_7wavelet_9extension_14base_transform_13BaseTransform_waveRec1;
-  if (PyType_Ready(&__pyx_type_7wavelet_9extension_14base_transform_BaseTransform) < 0) __PYX_ERR(0, 10, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_7wavelet_9extension_14base_transform_BaseTransform) < 0) __PYX_ERR(0, 8, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
   __pyx_type_7wavelet_9extension_14base_transform_BaseTransform.tp_print = 0;
   #endif
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_7wavelet_9extension_14base_transform_BaseTransform.tp_dictoffset && __pyx_type_7wavelet_9extension_14base_transform_BaseTransform.tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_type_7wavelet_9extension_14base_transform_BaseTransform.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (__Pyx_SetVtable(__pyx_type_7wavelet_9extension_14base_transform_BaseTransform.tp_dict, __pyx_vtabptr_7wavelet_9extension_14base_transform_BaseTransform) < 0) __PYX_ERR(0, 10, __pyx_L1_error)
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_BaseTransform, (PyObject *)&__pyx_type_7wavelet_9extension_14base_transform_BaseTransform) < 0) __PYX_ERR(0, 10, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_7wavelet_9extension_14base_transform_BaseTransform) < 0) __PYX_ERR(0, 10, __pyx_L1_error)
+  if (__Pyx_SetVtable(__pyx_type_7wavelet_9extension_14base_transform_BaseTransform.tp_dict, __pyx_vtabptr_7wavelet_9extension_14base_transform_BaseTransform) < 0) __PYX_ERR(0, 8, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_BaseTransform, (PyObject *)&__pyx_type_7wavelet_9extension_14base_transform_BaseTransform) < 0) __PYX_ERR(0, 8, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_7wavelet_9extension_14base_transform_BaseTransform) < 0) __PYX_ERR(0, 8, __pyx_L1_error)
   __pyx_ptype_7wavelet_9extension_14base_transform_BaseTransform = &__pyx_type_7wavelet_9extension_14base_transform_BaseTransform;
   __Pyx_RefNannyFinishContext();
   return 0;
@@ -5652,7 +5651,7 @@ if (!__Pyx_RefNanny) {
   Py_INCREF(__pyx_m);
   #else
   #if PY_MAJOR_VERSION < 3
-  __pyx_m = Py_InitModule4("base_transform", __pyx_methods, __pyx_k_Base_Transform_for_doing_basic_c, 0, PYTHON_API_VERSION); Py_XINCREF(__pyx_m);
+  __pyx_m = Py_InitModule4("base_transform", __pyx_methods, 0, 0, PYTHON_API_VERSION); Py_XINCREF(__pyx_m);
   #else
   __pyx_m = PyModule_Create(&__pyx_moduledef);
   #endif
@@ -5698,58 +5697,55 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_patch_abc() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
 
-  /* "wavelet/extension/base_transform.pyx":3
- * """Base Transform for doing basic calls for dwt & idwt based on the dimensions called"""
- * 
+  /* "wavelet/extension/base_transform.pyx":1
  * from wavelet.extension.wavelet_transform import WaveletTransform             # <<<<<<<<<<<<<<
  * from wavelet.util import getExponent
  * 
  */
-  __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 3, __pyx_L1_error)
+  __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(__pyx_n_s_WaveletTransform);
   __Pyx_GIVEREF(__pyx_n_s_WaveletTransform);
   PyList_SET_ITEM(__pyx_t_1, 0, __pyx_n_s_WaveletTransform);
-  __pyx_t_2 = __Pyx_Import(__pyx_n_s_wavelet_extension_wavelet_transf, __pyx_t_1, -1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 3, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_Import(__pyx_n_s_wavelet_extension_wavelet_transf, __pyx_t_1, -1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_ImportFrom(__pyx_t_2, __pyx_n_s_WaveletTransform); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 3, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_ImportFrom(__pyx_t_2, __pyx_n_s_WaveletTransform); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_WaveletTransform, __pyx_t_1) < 0) __PYX_ERR(0, 3, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_WaveletTransform, __pyx_t_1) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "wavelet/extension/base_transform.pyx":4
- * 
+  /* "wavelet/extension/base_transform.pyx":2
  * from wavelet.extension.wavelet_transform import WaveletTransform
  * from wavelet.util import getExponent             # <<<<<<<<<<<<<<
  * 
  * cimport numpy as np
  */
-  __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 4, __pyx_L1_error)
+  __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 2, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(__pyx_n_s_getExponent);
   __Pyx_GIVEREF(__pyx_n_s_getExponent);
   PyList_SET_ITEM(__pyx_t_2, 0, __pyx_n_s_getExponent);
-  __pyx_t_1 = __Pyx_Import(__pyx_n_s_wavelet_util, __pyx_t_2, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_Import(__pyx_n_s_wavelet_util, __pyx_t_2, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 2, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_ImportFrom(__pyx_t_1, __pyx_n_s_getExponent); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 4, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_ImportFrom(__pyx_t_1, __pyx_n_s_getExponent); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 2, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_getExponent, __pyx_t_2) < 0) __PYX_ERR(0, 4, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_getExponent, __pyx_t_2) < 0) __PYX_ERR(0, 2, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "wavelet/extension/base_transform.pyx":7
+  /* "wavelet/extension/base_transform.pyx":5
  * 
  * cimport numpy as np
  * import numpy as np             # <<<<<<<<<<<<<<
  * 
  * 
  */
-  __pyx_t_1 = __Pyx_Import(__pyx_n_s_numpy, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 7, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_Import(__pyx_n_s_numpy, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 5, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_np, __pyx_t_1) < 0) __PYX_ERR(0, 7, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_np, __pyx_t_1) < 0) __PYX_ERR(0, 5, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "(tree fragment)":1
@@ -5763,9 +5759,9 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "wavelet/extension/base_transform.pyx":1
- * """Base Transform for doing basic calls for dwt & idwt based on the dimensions called"""             # <<<<<<<<<<<<<<
+ * from wavelet.extension.wavelet_transform import WaveletTransform             # <<<<<<<<<<<<<<
+ * from wavelet.util import getExponent
  * 
- * from wavelet.extension.wavelet_transform import WaveletTransform
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);

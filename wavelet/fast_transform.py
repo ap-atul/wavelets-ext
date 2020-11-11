@@ -11,7 +11,7 @@ class FastWaveletTransform(BaseTransform):
     def __init__(self, waveletName):
         super().__init__(waveletName)
 
-    def waveRec(self, arrHilbert, level=None):
+    def waverec(self, arrHilbert, level=None):
         # setting the max level
         if level is None:
             level = getExponent(len(arrHilbert))
@@ -25,7 +25,7 @@ class FastWaveletTransform(BaseTransform):
         else:
             return self.waveRec1(arrHilbert, level)
 
-    def waveDec(self, arrTime, level=None):
+    def wavedec(self, arrTime, level=None):
         # setting the max level
         if level is None:
             level = getExponent(len(arrTime))
