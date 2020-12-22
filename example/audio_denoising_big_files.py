@@ -5,8 +5,8 @@ from wavelet.compression import VisuShrinkCompressor
 from wavelet.fast_transform import FastWaveletTransform, getExponent
 from wavelet.util.utility import snr
 
-INPUT_FILE = "/home/atul/Videos/gretel_small.wav"
-OUTPUT_FILE = "/home/atul/Videos/gretel_small_denoised.wav"
+INPUT_FILE = "input.wav"
+OUTPUT_FILE = "input_denoised.wav"
 WAVELET_NAME = "coif1"  # coif1 works vey well
 
 info = soundfile.info(INPUT_FILE)  # getting info of the audio
