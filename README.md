@@ -13,7 +13,7 @@ pip install git+https://github.com/AP-Atul/wavelets-ext.git
 ```
 
 2. Clone the repo and run the setup
-```
+```console
 git clone https://github.com/AP-Atul/wavelets-ext.git
 python setup.py build_ext --inplace
 ```
