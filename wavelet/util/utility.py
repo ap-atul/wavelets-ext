@@ -90,6 +90,18 @@ def snr(data, axis=0, ddof=0):
     return np.where(sd == 0, 0, m / sd)
 
 
+def rmse(original, noise):
+    """ Returns the root mean squared error between y and x signals """
+    return np.sqrt(np.mean(np.power(np.subtract(original, noise), 2)))
+
+
+def snr2(original, noise):
+    with np.errstate(divide='ignore'):
+        numerator = np.sum(np.power(original, 2))
+        denoiminator = np.sum(np.power(np.subtract(original, noise), 2))
+        return 10 * np.log10(np.divide(numerator, denoiminator))
+
+
 def amp_to_db(S, ref=1.0, min_value=1e-5, top_db=80.0):
     """
     Convert an amplitude spectrogram to dB-scaled spectrogram.
