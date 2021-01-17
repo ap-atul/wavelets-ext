@@ -15,6 +15,7 @@ class FastWaveletTransform(BaseTransform):
 
     def __init__(self, waveletName):
         super().__init__(waveletName)
+        self._count = 0
 
     def waverec(self, arrHilbert, level=None):
         """
@@ -41,12 +42,12 @@ class FastWaveletTransform(BaseTransform):
         # for single dim data
         if dimensions == 1:
             # perform ancient egyptian reconstruction
-            return self.__waveRecAncientEgyptian(arrHilbert, level)
+            return self._waverec_ancient(arrHilbert, level)
 
         # for two dim data
         if dimensions == 2:
             # perform ancient egyptian reconstruction
-            return self.__waveRecAncientEgyptian2(arrHilbert)
+            return self._waverec_ancient_2(arrHilbert)
 
     def wavedec(self, arrTime, level=None):
         """
@@ -73,14 +74,14 @@ class FastWaveletTransform(BaseTransform):
         # for two single data
         if dimensions == 1:
             # perform ancient egyptian decomposition
-            return self.__waveDecAncientEgyptian(arrTime, level)
+            return self._wavedec_ancient(arrTime, level)
 
         # for two dim data
         if dimensions == 2:
             # perform ancient egyptian decomposition
-            return self.__waveDecAncientEgyptian2(arrTime)
+            return self._wavedec_ancient_2(arrTime)
 
-    def __waveDecAncientEgyptian(self, arrTime, level):
+    def _wavedec_ancient(self, arrTime, level):
         """
         Wavelet decomposition for data of arbitrary length
 
@@ -113,14 +114,16 @@ class FastWaveletTransform(BaseTransform):
             arrTimeSliced = arrTime[offset: (offset + sliceIndex)]
 
             # run the wavelet decomposition for the slice
-            arrHilbert.extend(self.waveDec1(np.array(arrTimeSliced, dtype=np.float_), level))
+            arrHilbert.extend(self.forward(np.array(arrTimeSliced, dtype=np.float_), level))
+            # print(f"Running :: {self._count}")
+            self._count += 1
 
             # incrementing the offset
             offset += sliceIndex
 
         return arrHilbert
 
-    def __waveRecAncientEgyptian(self, arrHilbert, level):
+    def _waverec_ancient(self, arrHilbert, level):
         """
         Wavelet reconstruction for data of arbitrary length
 
@@ -153,7 +156,7 @@ class FastWaveletTransform(BaseTransform):
             arrHilbertSliced = arrHilbert[offset: (offset + sliceIndex)]
 
             # run the wavelet decomposition for the slice
-            arrTimeSliced = self.waveRec1(np.array(arrHilbertSliced, dtype=np.float_), level)
+            arrTimeSliced = self.backward(np.array(arrHilbertSliced, dtype=np.float_), level)
             arrTime.extend(arrTimeSliced)
 
             # incrementing the offset
@@ -161,7 +164,7 @@ class FastWaveletTransform(BaseTransform):
 
         return arrTime
 
-    def __waveDecAncientEgyptian2(self, matTime):
+    def _wavedec_ancient_2(self, matTime):
         """
         Wavelet decomposition for data of arbitrary length (2D)
 
@@ -196,16 +199,16 @@ class FastWaveletTransform(BaseTransform):
         # rows
         for i in range(noOfRows):
             # run the decomposition
-            matHilbert[i] = self.__waveDecAncientEgyptian(np.array(matTime[i], dtype=np.float_), levelN)
+            matHilbert[i] = self._wavedec_ancient(np.array(matTime[i], dtype=np.float_), levelN)
 
         # cols
         for j in range(noOfCols):
             # run the decomposition
-            matHilbert[:, j] = self.__waveDecAncientEgyptian(np.array(matHilbert[:, j], dtype=np.float_), levelM)
+            matHilbert[:, j] = self._wavedec_ancient(np.array(matHilbert[:, j], dtype=np.float_), levelM)
 
         return matHilbert
 
-    def __waveRecAncientEgyptian2(self, matHilbert):
+    def _waverec_ancient_2(self, matHilbert):
         """
         Wavelet reconstruction for data of arbitrary length (2D)
 
@@ -240,11 +243,11 @@ class FastWaveletTransform(BaseTransform):
         # rows
         for j in range(noOfCols):
             # run the reconstruction on the row
-            matTime[:, j] = self.__waveRecAncientEgyptian(np.array(matHilbert[:, j], dtype=np.float_), levelM)
+            matTime[:, j] = self._waverec_ancient(np.array(matHilbert[:, j], dtype=np.float_), levelM)
 
         # cols
         for i in range(noOfRows):
             # run the reconstruction on the column
-            matTime[i] = self.__waveRecAncientEgyptian(np.array(matTime[i], dtype=np.float_), levelN)
+            matTime[i] = self._waverec_ancient(np.array(matTime[i], dtype=np.float_), levelN)
 
         return matTime

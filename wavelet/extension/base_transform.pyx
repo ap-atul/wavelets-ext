@@ -9,7 +9,7 @@ cdef class BaseTransform:
     def __init__(self, waveletName):
         self.wavelet = WaveletTransform(waveletName)
 
-    cpdef waveDec1(self, np.ndarray arrTime, int level):
+    cpdef forward(self, np.ndarray arrTime, int level):
         cdef int length = 0
         cdef np.ndarray arrHilbert = arrTime.copy()
         cdef int dataLength = len(arrHilbert)
@@ -25,7 +25,7 @@ cdef class BaseTransform:
 
         return arrHilbert
 
-    cpdef waveRec1(self, np.ndarray arrHilbert, int level):
+    cpdef backward(self, np.ndarray arrHilbert, int level):
         cdef np.ndarray arrTime = arrHilbert.copy()
         cdef np.ndarray arrTemp
         cdef int dataLength = len(arrTime)
