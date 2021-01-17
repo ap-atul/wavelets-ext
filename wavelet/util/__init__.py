@@ -1,1 +1,1 @@
-from wavelet.util.utility import *
+from .utility import *

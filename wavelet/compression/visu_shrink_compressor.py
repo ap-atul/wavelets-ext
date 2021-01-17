@@ -2,8 +2,8 @@
 
 import numpy as np
 
-from wavelet.compression.compressor import Compressor
-from wavelet.util.utility import threshold, mad
+from .compressor import Compressor
+from ..util.utility import threshold, mad
 
 
 class VisuShrinkCompressor:

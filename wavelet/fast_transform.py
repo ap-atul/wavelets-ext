@@ -1,10 +1,10 @@
 """Fast Wavelet Transform calls the Base Transform based on the dimensions"""
 
 import numpy as np
-# ignore the red underline, it refers to cpdef function
-from wavelet.extension.base_transform import BaseTransform
 
-from wavelet.util import decomposeArbitraryLength, scalb, getExponent
+# ignore the red underline, it refers to cpdef function
+from .extension.base_transform import BaseTransform
+from .util import decomposeArbitraryLength, scalb, getExponent
 
 
 class FastWaveletTransform(BaseTransform):

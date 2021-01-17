@@ -2,7 +2,7 @@
 
 import numpy as np
 
-from wavelet.compression.compressor import Compressor
+from .compressor import Compressor
 
 
 class CompressorPeak:

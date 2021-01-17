@@ -4,7 +4,7 @@ from math import log, pow
 
 import numpy as np
 
-from wavelet.exceptions import WaveletException
+from ..exceptions import WaveletException
 
 
 def getExponent(value):

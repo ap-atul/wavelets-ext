@@ -1,14 +1,14 @@
 """Maps the wavelet name to the Wavelet Class object"""
 
-from wavelet.exceptions import WaveletImplementationMissing
-from wavelet.wavelets import (db2, db3, db4, db5, db6, db7, db8, db9, db10,
-                              db11, db12, db13, db14, db15, db16, db17, db18, db19, db20,
-                              sym2, sym3, sym4, sym5, sym6, sym7, sym8, sym9, sym10,
-                              sym11, sym12, sym13, sym14, sym15, sym16, sym17, sym18, sym19, sym20,
-                              bior1_1, bior1_3, bior1_5, bior2_2, bior2_4, bior2_6, bior2_8, bior3_1, bior3_3, bior3_5,
-                              bior3_7, bior3_9, bior4_4, bior5_5, bior6_8,
-                              coif1, coif2, coif3, coif4, coif5,
-                              dmey, haar)
+from . import (db2, db3, db4, db5, db6, db7, db8, db9, db10,
+               db11, db12, db13, db14, db15, db16, db17, db18, db19, db20,
+               sym2, sym3, sym4, sym5, sym6, sym7, sym8, sym9, sym10,
+               sym11, sym12, sym13, sym14, sym15, sym16, sym17, sym18, sym19, sym20,
+               bior1_1, bior1_3, bior1_5, bior2_2, bior2_4, bior2_6, bior2_8, bior3_1, bior3_3, bior3_5,
+               bior3_7, bior3_9, bior4_4, bior5_5, bior6_8,
+               coif1, coif2, coif3, coif4, coif5,
+               dmey, haar)
+from ..exceptions import WaveletImplementationMissing
 
 # all wavelets go here
 wavelet = {
